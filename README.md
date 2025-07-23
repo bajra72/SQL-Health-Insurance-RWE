@@ -1,5 +1,7 @@
 # Health Insurance Marketplace Analysis
 🔗 Dataset: [Benefit_Cost_Sharing Public Use Files (PUF)](https://www.kaggle.com/datasets/hhs/health-insurance-marketplace)
+
+# Objective
 This project analyzes 2016 health insurance benefit cost-sharing data to quantify patient out-of-pocket expenses, including copayments, coinsurance, and deductibles.
 
 # Why This Project?
@@ -16,4 +18,4 @@ This initiative is directly aligned with the mission of utilizing real-world pat
 
 **Insurer-Specific Cost Variability:** An analysis at the issuer level unveiled stark differences in cost-sharing, with some insurers imposing exceptionally high average Tier 1 drug copayments (e.g., over $114) and coinsurance (e.g., over 15%), presenting significant financial barriers for patients accessing even basic medications.
 
-**Adult Routine Dental Coverage: **3,342 analyzed health plans explicitly provided coverage for adult routine dental services in 2016, indicating specific areas of preventive care inclusion but also highlighting potential gaps in broader benefit availability.
+**Adult Routine Dental Coverage: ** 3,342 analyzed health plans explicitly provided coverage for adult routine dental services in 2016, indicating specific areas of preventive care inclusion but also highlighting potential gaps in broader benefit availability.
