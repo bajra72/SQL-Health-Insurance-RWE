@@ -22,8 +22,13 @@ This initiative is directly aligned with the mission of utilizing real-world pat
 
 # Methodology
 Data Acquisition & Preparation: Established a dedicated SQLite database and imported the raw 2016 Health Insurance Benefit Cost Sharing dataset.
+
 Data Wrangling & Cleaning: Executed precise SQL ALTER TABLE and UPDATE statements to:
+
 Standardize the ImportDate column into a consistent YYYY-MM-DD date format.
+
 Create dedicated REAL (decimal) columns for all core cost-sharing metrics (e.g., CleanedCopayInnTier1, CleanedCoinsInnTier1, CleanedDrugDeductibleIndividual).
+
 Implement CASE statements and REPLACE functions to robustly convert raw text values (including currency symbols, percentages, and "Not Applicable") into analyzable numerical data.
+
 Exploratory Data Analysis (EDA): Leveraged advanced SQL aggregations (AVG, COUNT), grouping (GROUP BY), and conditional logic (CASE) to uncover average cost-sharing values, distribution of benefit limits, and coverage prevalence for critical services.
