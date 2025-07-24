@@ -19,3 +19,11 @@ This initiative is directly aligned with the mission of utilizing real-world pat
 **Insurer-Specific Cost Variability:** An analysis at the issuer level unveiled stark differences in cost-sharing, with some insurers imposing exceptionally high average Tier 1 drug copayments (e.g., over $114) and coinsurance (e.g., over 15%), presenting significant financial barriers for patients accessing even basic medications.
 
 **Adult Routine Dental Coverage: ** 3,342 analyzed health plans explicitly provided coverage for adult routine dental services in 2016, indicating specific areas of preventive care inclusion but also highlighting potential gaps in broader benefit availability.
+
+# Methodology
+Data Acquisition & Preparation: Established a dedicated SQLite database and imported the raw 2016 Health Insurance Benefit Cost Sharing dataset.
+Data Wrangling & Cleaning: Executed precise SQL ALTER TABLE and UPDATE statements to:
+Standardize the ImportDate column into a consistent YYYY-MM-DD date format.
+Create dedicated REAL (decimal) columns for all core cost-sharing metrics (e.g., CleanedCopayInnTier1, CleanedCoinsInnTier1, CleanedDrugDeductibleIndividual).
+Implement CASE statements and REPLACE functions to robustly convert raw text values (including currency symbols, percentages, and "Not Applicable") into analyzable numerical data.
+Exploratory Data Analysis (EDA): Leveraged advanced SQL aggregations (AVG, COUNT), grouping (GROUP BY), and conditional logic (CASE) to uncover average cost-sharing values, distribution of benefit limits, and coverage prevalence for critical services.
